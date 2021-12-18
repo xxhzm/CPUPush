@@ -7,7 +7,7 @@ cpu.sh中的key为server酱的推送key，必须填写
 注册地址https://sct.ftqq.com/sendkey
 
 
-wget https://cdn.jsdelivr.net/gh/xxhzm/cpupush/cpu.sh
+wget https://www.xxhzm.cn/wj/upload/cpu.sh
 
 chmod +x cpu.sh
 
