@@ -8,7 +8,7 @@ Duration=300
 # CPU峰值(最高100)
 peakValue=80
 # 推送标题
-title="您的服务器持续高负债状态"
+title="您的服务器持续高负载状态"
 # Server酱秘钥
 key=""
 
