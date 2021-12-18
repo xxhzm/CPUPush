@@ -71,7 +71,7 @@ do
                 time=$(date "+%Y-%m-%d %H:%M:%S")
                 # 使用Server酱推送到微信
                 local_ip=`ifconfig -a|grep inet|grep -v 127.0.0.1|grep -v inet6|awk '{print $2}'|tr -d "addr:"​`
-                desp="您ip为"${local_ip}"的服务器持续高负债状态，在"${Duration}"秒内，连续"${Durationtimes}"次，峰值都超过了"${peakValue}"，触发了预警，请检查您的服务器是否正常！时间："${time}
+                desp="您ip为"${local_ip}"的服务器持续高负载状态，在"${Duration}"秒内，连续"${Durationtimes}"次，峰值超过了"${peakValue}"，触发了预警，请检查您的服务器是否正常！时间："${time}
                 curl -X POST --data "title=${title}&desp=${desp}" https://sctapi.ftqq.com/${key}.send?
                 # 如果成立frequency变量重置为0，脚本休眠5分钟。以防推送BUG
                 frequency=0
