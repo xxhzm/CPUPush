@@ -14,3 +14,8 @@ chmod +x cpu.sh
 vim cpu.sh
 
 修改key为你自己的
+
+nohup ./cpu.sh &
+
+就OK了
+运行日志会输出在当前目录的nohup.out里面
